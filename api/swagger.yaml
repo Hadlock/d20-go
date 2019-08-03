@@ -1,0 +1,123 @@
+---
+swagger: "2.0"
+info:
+  description: "Restful RNG/dice API built with OpenAPI 2.0 and Go"
+  version: "1.0.0"
+  title: "D20-go"
+  termsOfService: "http://swagger.io/terms/"
+  contact:
+    name: "chad.hedstrom@gmail.com"
+  license:
+    name: "GNU 2.0"
+host: "d20.hedstrom.org"
+basePath: "/api"
+schemes:
+- "http"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+paths:
+  /d4:
+    get:
+      description: "Returns integer between 1 and 4"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "A random int between 1 and 4."
+          schema:
+            type: "integer"
+  /d6:
+    get:
+      description: "Returns integer between 1 and 6"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "A random int between 1 and 6."
+          schema:
+            type: "integer"
+  /d8:
+    get:
+      description: "Returns integer between 1 and 8"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "A random int between 1 and 8."
+          schema:
+            type: "integer"
+  /d10:
+    get:
+      description: "Returns integer between 1 and 10"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "A random int between 1 and 10."
+          schema:
+            type: "integer"
+  /d12:
+    get:
+      description: "Returns integer between 1 and 12"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "A random int between 1 and 12."
+          schema:
+            type: "integer"
+  /d20:
+    get:
+      description: "Returns integer between 1 and 20"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "A random int between 1 and 20."
+          schema:
+            type: "integer"
+definitions:
+  D4:
+    type: "object"
+    properties:
+      roll:
+        type: "integer"
+        format: "int64"
+  D6:
+    type: "object"
+    properties:
+      roll:
+        type: "integer"
+        format: "int64"
+  D8:
+    type: "object"
+    properties:
+      roll:
+        type: "integer"
+        format: "int64"
+  D10:
+    type: "object"
+    properties:
+      roll:
+        type: "integer"
+        format: "int64"
+  D12:
+    type: "object"
+    properties:
+      roll:
+        type: "integer"
+        format: "int64"
+  D20:
+    type: "object"
+    properties:
+      roll:
+        type: "integer"
+        format: "int64"
